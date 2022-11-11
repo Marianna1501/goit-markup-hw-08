@@ -1,0 +1,149 @@
+// Color
+$primary-text-color: #212121;
+$second-text-color: #757575;
+$accent-color: #2196f3;
+$white-color: #ffffff;
+$primary-bgc: #2f303a;
+$contact-color: rgba(255, 255, 255, 0.6);
+$featur-descr-color: rgba(47, 48, 58, 0.8);
+$second-bgc: #f5f4fa;
+$svg-primary-color: #afb1b8;
+$social-footer-bgc: rgba(255, 255, 255, 0.1);
+$overlay-bgc: rgba(33, 150, 243, 0.9);
+$backdrop-bgc: rgba(0, 0, 0, 0.2);
+$form-input-subscr-border: rgba(255, 255, 255, 0.3);
+$form-input-border: rgba(33, 33, 33, 0.2);
+$form-btn-act-bgc: #188ce8;
+$form-btn-cls-border: rgba(0, 0, 0, 0.1);
+$portf-work-descr-border: #eeeeee;
+
+// box-shadow
+$shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$shadow-btn-act: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+$shadow-form: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$shadow-team-list: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$shadow-portf-work-list__link: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
+// Font-weight
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+// Font-size
+$font-extralight: 0.75em;
+$font-light: 0.875em;
+$font-regular: 1em;
+$font-medium: 1.125em;
+$font-semibold: 1.25em;
+$font-bold: 2.25em;
+$font-black: 2.75em;
+$font-logo: 1.625em;
+
+// func transform
+$cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// Placeholders
+
+//title
+%fonts-title {
+  font-weight: $bold;
+  font-size: $font-bold;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+%fonts-sub-title {
+  font-weight: $bold;
+  font-size: $font-light;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+%fonts-client-form__title {
+  font-weight: $bold;
+  font-size: $font-semibold;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+%fonts-client-form__label {
+  font-weight: $regular;
+  font-size: $font-extralight;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+// fonts
+%fonts-header {
+  font-weight: $medium;
+  font-size: $font-light;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+%fonts-hero {
+  font-weight: $black;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: $font-black;
+  line-height: 1.35;
+}
+
+%fonts-description {
+  font-weight: $regular;
+  font-size: $font-light;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+%fonts-team__name {
+  font-weight: $medium;
+  font-size: $font-regular;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+%fonts-team-pos {
+  font-weight: $regular;
+  font-size: $font-regular;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+%fonts-address {
+  font-weight: $regular;
+  font-size: $font-light;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+%fonts-title-join {
+  font-weight: $bold;
+  font-size: $font-light;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+%fonts-overlay-text {
+  font-weight: $regular;
+  font-size: $font-medium;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+
+
+// list link
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+%link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

@@ -1,0 +1,63 @@
+.page-footer {
+  padding: 60px 0;
+  background-color: $primary-bgc;
+
+// контейнер для 3 дивов
+  &__wrapper {
+  
+    
+    @media screen and(max-width:767px) {
+      flex-direction: column;
+      }
+      @media screen and (min-width:768px) and (max-width:1200px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+      }
+      @media screen and(max-width:1200px){
+        text-align: center;
+      }
+      @media screen and(min-width:1200px){
+        display: flex;
+
+      }
+    }
+
+// контейнер 3 дивов
+  &__item {
+
+    @media screen and(max-width:1200px) {
+      &:nth-child(-n+2){
+        margin-bottom: 60px;
+    }
+  }
+
+  @media screen and(min-width:1200px){
+    &:not(:first-child) {
+      margin-left: auto;
+      margin-top: 12px;
+    }
+  }
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: $white-color;
+    
+  }
+}
+
+

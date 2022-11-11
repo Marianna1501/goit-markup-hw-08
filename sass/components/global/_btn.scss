@@ -1,0 +1,99 @@
+.btn {
+  padding: 0;
+  margin: 0;
+  font-weight: $bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
+  box-shadow: $shadow-btn;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: $cubic;
+
+  &--menu {
+    position: relative;
+    display: inline-flex;
+    color: $primary-text-color;
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 100;
+    border-radius: 0;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    @media screen and(min-width:768px) {
+      display: none;
+      
+    }
+    & .icon-cross{
+      display: none;
+    }
+    &.is-open .icon-cross{
+      display: block;
+    }
+    &.is-open .icon-menu{
+      display: none;
+    }
+  }
+
+  &--hero {
+    padding: 10px 32px;
+  }
+
+  &--form-submit {
+    align-self: center;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 56px;
+    padding-right: 55px;
+    &:hover,
+    &:focus {
+      background-color: $form-btn-act-bgc;
+    }
+  }
+  &-portfolio {
+    padding: 6px 22px;
+    font-weight: $medium;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    background-color: $second-bgc;
+    border-radius: 4px;
+    transition: $cubic;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $accent-color;
+      box-shadow: $shadow-btn-act;
+    }
+  }
+  &-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: $primary-text-color;
+    background-color: $white-color;
+    border: 1px solid $form-btn-cls-border;
+    border-radius: 50%;
+    transition: $cubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

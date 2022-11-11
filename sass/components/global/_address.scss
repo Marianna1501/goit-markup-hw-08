@@ -1,0 +1,31 @@
+.address {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+
+  &--page-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  &__link {
+    @extend %link;
+    color: $white-color;
+
+    &--page-footer {
+      &:first-child {
+        margin-top: 20px;
+      }
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+
+    &--grey {
+      color: $contact-color;
+    }
+  }
+}

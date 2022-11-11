@@ -1,0 +1,23 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+
+  &__text {
+    @extend %fonts-overlay-text;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+    background-color: $overlay-bgc;
+    color: $white-color;
+
+    overflow: hidden;
+    transform: translateY(100%);
+    transition: $cubic;
+  }
+}
